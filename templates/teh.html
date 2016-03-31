@@ -1,0 +1,60 @@
+<html>
+	<head>
+		 <title> Trigon Engineering Society </title> 
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/teh.css')}}"/>
+	</head>
+	<body>
+	<div class="header">
+		<div class="container">
+			<img src="{{url_for('static', filename='images/header_img.jpg')}}">
+			<hr>
+			<div class="nav row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-2 home">
+					<a href="/">Home</a>
+				</div>
+				<div class="col-sm-2 link rush"><a href="/rush">Rush</a></div>
+				<div class="col-sm-2 link lawn"><a href="/lawn">Lawn Room</a></div>
+				<div class="col-sm-2 link history"><a href="/history">History</a></div>
+				<div class="col-sm-2 link teh"><a class="active" href="/teh">TEH Award</a></div>
+				<div class="col-sm-1"></div>
+
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<h1>TEH</h1>
+			<h3>Thomas E. Hutchinson Award</h3>
+			<p>Each year, the Thomas E. Hutchinson Faculty Award honors leading engineering professors who have demonstrated a love of teaching, genuine outreach to their students, and have significantly contributed to the engineering school.  Trigon established the student-nominated award in the name of Thomas E. Hutchinson, or Hutch as many call him, who served as Trigon’s faculty advisor from 1991 until his retirement in 2005.  This award is dedicated to him for his excellence in teaching and commitment to impacting students’ lives.  The Thomas E. Hutchinson Award is normally presented in the dome room of the Rotunda.  Due to Rotunda renovations the annual ceremony is now held in Hotel E for the time being.</p>
+			<h3>Past Winners</h3>
+			<ul class="winners">
+				<li>2005 – Professor Peter D. Norton – Department of Science, Technology, and Society</li>
+				<li>2006 – Professor Aaron S. Bloomfield – Department of Computer Science</li>
+				<li>2007 – Professor Roseanne M. Ford – Department of Chemical Engineering</li>
+				<li>2008 – Professor Timothy E. Allen – Department of Biomedical Engineering</li>
+				<li>2009 – Professor Mary P. Beck – Applied Mathematics, Assistant Dean for Student Affairs</li>
+				<li>2010 – Professor Mark S. Sherriff – Department of Computer Science</li>
+				<li>2011 – Professor Diana D. Morris – Applied Mathematics</li>
+				<li>2012 – Professor Archie L. Holmes Jr. – Department of Electrical and Computer Engineering</li>
+				<li>2013 – Professor Gavin Garner – Department of Mechanical and Aerospace Engineering</li>
+				<li>2014 – Professor Donald Jordan – Department of Mechanical and Aerospace Engineering</li>
+				<li>2015 – Professor Lindsay Ivey Burden – Department of Civil Engineering</li>
+			</ul>
+			<h4>Be sure to vote for your favorite professor next year!</h4>
+		</div>
+	</div>	
+
+	<div class="foot">
+	<hr>
+	<div class="bottom-bar">
+		<div class="container">
+			<p>Trigon Engineering Society is a Contracted Independent Organization (CIO). Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization’s contracts, acts or omissions. The University of Virginia is in no way responsible for the society's contracts, acts, or omissions. © 2009 Trigon Alumni Network</p>
+			<h3>Powered by Flask</h3>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

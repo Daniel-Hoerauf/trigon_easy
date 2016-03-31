@@ -1,0 +1,33 @@
+$navback: #AAAAAA;
+
+.header {
+	img {
+		height: 100px;
+	}
+	width: 100%;
+	background-color: $navback;
+	text-align: center;
+	box-shadow: 0 5px 3px $navback;
+}
+.nav {
+	padding: 10px 0 20px;
+	margin: 10px 0;
+	font-size: 16px;
+	.home {
+		text-align: left;
+		text-align: center;
+	}
+	.link {
+		text-align: center;
+		// float: right;
+	}
+	a {	
+		color: black;
+		text-decoration: none;
+		padding: 20px 20px;
+		border-radius: 10px;
+	}
+	a:hover, .active {
+		background-color: darken($navback, 30%);
+	}
+}

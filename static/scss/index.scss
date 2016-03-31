@@ -1,0 +1,58 @@
+@import 'nav';
+@import 'foot';
+
+$mainBack : #F3F2F0;
+
+body {
+	font-family: Ubuntu;
+	background-color: darken($mainBack, 7.5%);
+}
+.home {
+	display: block;
+	img {
+		max-width: 90%;
+		display: block;
+		margin: 40px auto;
+		-webkit-box-shadow: 0 15px 6px -6px #777;
+		-moz-box-shadow: 0 15px 6px -6px #777;
+		box-shadow: 0 15px 6px -6px #777;
+		position:relative;
+	}
+
+}
+
+.content {
+	border-radius: 5px;
+	background-color: white;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+	h1 {
+		text-decoration: underline;
+	}
+	hr {
+		width: 90%;
+	    height: 30px; 
+  		border-style: solid; 
+		border-color: #8c8b8b; 
+		border-width: 1px 0 0 0; 
+		border-radius: 20px; 
+	}
+	hr:before {
+		display: block; 
+		content: ""; 
+		height: 30px; 
+		margin-top: -31px; 
+		border-style: solid; 
+		border-color: #8c8b8b; 
+		border-width: 0 0 1px 0; 
+		border-radius: 20px; 
+	}
+}
+.content:last-child {
+	padding-bottom: 20px;
+}
+.single-line {
+	margin: 0 10%;
+	display: block;
+}

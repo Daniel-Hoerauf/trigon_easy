@@ -1,0 +1,16 @@
+.ListTable{
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 1.625em;
+    border-collapse: separate;
+    border-spacing: 0;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    td, th {
+        padding: 5px;
+        border-bottom: 1px solid #ddd;
+    }
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+}
