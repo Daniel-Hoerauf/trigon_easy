@@ -29,7 +29,30 @@ def teh():
 def rush():
 	return render_template('rush.html')
 
-# @app.route('/myrtle')
+@app.route('/myrtle', methods=['GET'])
+def myrtle():
+	open_connection()
+	hookups = get_current_list()
+	close_connection()
+	return render_template('myrtle.html',
+		items=hookups
+		)
+
+@app.route('/myrtle', methods=['POST'])
+def add_myrtle():
+	open_connection()
+	hooker = request.form['hooker']
+	hookee = request.form['hookee']
+	reason = request.form['reason']
+	print hooker
+	print hookee
+	print reason
+	add_entry(hooker, hookee, reason)
+	hookups = get_current_list()
+	close_connection()
+	return render_template('myrtle.html',
+		items=hookups
+		)
 
 
 if __name__ == '__main__':

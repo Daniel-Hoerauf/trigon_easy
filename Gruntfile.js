@@ -8,6 +8,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'static/css/index.css' : 'static/scss/index.scss',
+					'static/css/base.css' : 'static/scss/base.scss',
 					'static/css/herstory.css' : 'static/scss/herstory.scss',
 					'static/css/lawn.css' : 'static/scss/lawn.scss',
 					'static/css/rush.css' : 'static/scss/rush.scss',
