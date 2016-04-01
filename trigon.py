@@ -38,21 +38,24 @@ def myrtle():
 		items=hookups
 		)
 
-@app.route('/myrtle', methods=['POST'])
+@app.route('/add_hk', methods=['POST'])
 def add_myrtle():
-	open_connection()
 	hooker = request.form['hooker']
 	hookee = request.form['hookee']
 	reason = request.form['reason']
 	print hooker
 	print hookee
 	print reason
+	if hooker == '' or hookee == '' or reason == '':
+		return redirect(url_for('myrtle'))
+	open_connection()
 	add_entry(hooker, hookee, reason)
 	hookups = get_current_list()
 	close_connection()
-	return render_template('myrtle.html',
-		items=hookups
-		)
+	return redirect(url_for('myrtle'))
+	# return render_template('myrtle.html',
+	# 	items=hookups
+	# 	)
 
 
 if __name__ == '__main__':
