@@ -6,6 +6,7 @@ conn = None
 cursor = None
 database = 'myrtle.db'
 
+
 def open_connection():
 	global cursor, conn, cursor
 	print "Opening connection to {}".format(database);
@@ -13,15 +14,17 @@ def open_connection():
 	conn.row_factory = lite.Row
 	cursor = conn.cursor()
 
+
 def close_connection():
 	global conn
 	conn.close()
+
 
 def add_entry(hooker, hookee, reason):
 	current_year = str(date.timetuple(date.today())[0])
 	cursor.execute('INSERT INTO hookups VALUES (NULL, ?, ?, ?, ?)', (hooker, hookee, reason, current_year))
 	conn.commit()
-	
+
 
 def get_current_list():
 	currentyear = str(date.timetuple(date.today())[0])
@@ -36,9 +39,9 @@ def get_current_list():
 		ret_json.append(item)
 	return ret_json
 
+
 if __name__=='__main__':
 	open_connection()
-	# add_entry('Danny', 'Lauren', 'Doc won\'t be there')
 	for item in get_current_list():
 		print item
 	close_connection()

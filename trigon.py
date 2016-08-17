@@ -53,10 +53,6 @@ def add_myrtle():
 	hookups = get_current_list()
 	close_connection()
 	return redirect(url_for('myrtle'))
-	# return render_template('myrtle.html',
-	# 	items=hookups
-	# 	)
-
 
 if __name__ == '__main__':
 	app.debug = True
