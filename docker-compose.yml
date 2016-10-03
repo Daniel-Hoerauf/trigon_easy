@@ -1,5 +1,7 @@
 version: '2'
 services:
+    db:
+        image: postgres
     app:
         build: .
         ports:
